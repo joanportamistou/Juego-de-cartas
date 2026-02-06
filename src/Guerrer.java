@@ -6,10 +6,12 @@ public class Guerrer extends Entitat {
 
 
     }
-
+    @Override
     public void atacar() {
         System.out.println(getNom() + " atacar!");
+        usarCartes();
     }
+
 }
 
 
