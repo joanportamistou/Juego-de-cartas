@@ -6,11 +6,16 @@ public class Ma extends Entitat {
         this.puntsMagia = puntsMagia;
     }
     public void atacar() {
-        System.out.println(getNom() + " llança un encanteri màgic usant els seus punts de màgia!");
+        System.out.println(getNom() + " llança un encanteri màgic usant els seus punts de màgia");
+        usarCartes();
     }
 
 
-    public int getPuntsMagia() { return puntsMagia; }
-    public void setPuntsMagia(int puntsMagia) { this.puntsMagia = puntsMagia; }
+    public int getPuntsMagia() {
+        return puntsMagia;
+    }
+    public void setPuntsMagia(int puntsMagia) {
+        this.puntsMagia = puntsMagia;
+    }
 }
 
