@@ -15,7 +15,8 @@ public abstract class Entitat {
         return nom; }
 
     public int getNivell() {
-        return nivell; }
+        return nivell;
+    }
 
     public void setNivell(int n) {
 

@@ -1,4 +1,14 @@
-public class Ma extends Entitat {
+public class Ma extends Entitat implements Interface {
+    @Override
+    public void defensar(int dany) {
+
+    }
+
+    @Override
+    public void utilitzarCartaEspecial(String carta) {
+
+    }
+
     private int puntsMagia;
 
     public Ma(String nom, int nivell, int vida, int mana) {
