@@ -9,9 +9,16 @@ public class Main {
         personatges.add(g);
         personatges.add(new Ma("Gandi", 1, 80, 100));
         personatges.add(new Monstre("Godzilla", 1, 50));
-        System.out.println("=== INICI DE LA BATALLA ===");
+        System.out.println("Inici de batalla");
         for (Entitat e : personatges) {
             e.atacar();
         }
+        System.out.println("Intennt de haqueig");
+        personatges.get(0).setPuntsVida(-500);
+        System.out.println("Vida després del hack: " + personatges.get(0).getPuntsVida());
+
+        personatges.get(0).setNivell(10);
+    }
+}
     }
 }
