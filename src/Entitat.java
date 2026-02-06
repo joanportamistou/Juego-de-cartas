@@ -1,7 +1,9 @@
+import java.util.ArrayList;
 public abstract class Entitat {
     private String nom ;
     private int nivell;
     private int puntsVida;
+    private ArrayList<String> cartesEspecials = new ArrayList<>();
 
     public Entitat(String nom, int nivell, int puntsVida) {
         this.nom = nom;
@@ -34,7 +36,15 @@ public abstract class Entitat {
         System.out.println(nom + " ha rebut " + quantitat + " de dany. Vida restant: " + puntsVida);
     }
 
+    public void afegirCarta(String carta) {
+        if (cartesEspecials.size() < 10) cartesEspecials.add(carta);
+    }
 
+    protected void usarCartes() {
+        for (String carta : cartesEspecials) {
+            System.out.println(" -> S'activa carta especial: " + carta [cite: 49]);
+        }
+    }
     public abstract void atacar();
 }
 
