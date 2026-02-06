@@ -4,15 +4,18 @@ public abstract class Entitat {
     private int nivell;
     private int puntsVida;
     private ArrayList<String> cartesEspecials = new ArrayList<>();
-
-    public Entitat(String nom, int nivell, int puntsVida) {
+   private Raresa tipus;
+    public Entitat(String nom, int nivell, int puntsVida,Raresa tipus) {
         this.nom = nom;
         this.nivell = nivell;
         this.puntsVida = puntsVida;
+        this.tipus= tipus;
     }
-    public String getNom() { return nom; }
+    public String getNom() {
+        return nom; }
 
-    public int getNivell() { return nivell; }
+    public int getNivell() {
+        return nivell; }
 
     public void setNivell(int n) {
 
@@ -42,7 +45,7 @@ public abstract class Entitat {
 
     protected void usarCartes() {
         for (String carta : cartesEspecials) {
-            System.out.println(" -> S'activa carta especial: " + carta [cite: 49]);
+            System.out.println("  S'activa carta especial: " + carta );
         }
     }
     public abstract void atacar();
